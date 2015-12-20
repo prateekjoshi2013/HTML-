@@ -1,0 +1,102 @@
+            <html>
+            <head>
+                <style>
+                    fieldset {background:lightyellow;border:10px solid yellow; margin-bottom:10px;width: 720px}
+                    label {width :180px;display:inline-block;right-align;top-align }
+                    .class1 { width:auto}
+                    .class2 {  text-align:center; 
+                        background-color: crimson}
+                    .class3 {  text-align:center;background-color:rebeccapurple}
+                    textarea{  width:360px and height:50px }    
+                    label:hover { font-size:40px }
+                    input:hover { font-size:40px }
+                </style>
+
+            </head>
+            <body>
+                <form action="https://ihome.ust.hk/~rossiter/cgi-bin/show_everything.php" enctype="multipart/form-data" method="post">
+                <fieldset><legend><h3>Your Face</h3></legend>
+
+                <label for="image">Your image:</label>    
+                <input type="file" name="image" id="image" required>  <br>
+
+                <label for="preview">Image preview:</label>        
+                <img  id="preview">    
+                </fieldset>
+                <fieldset>
+                <legend> <h3>Your general details</h3>
+
+                </legend>   
+                <label for="name">Name:</label>    
+                <input type="text" name="name" id="name" placeholder="Your Full Name"> <br>   
+                <label for="gender" >Gender:</label><wbr>
+                    <div id="gender"> <input class="class1" id="male" type=radio name="male" id="male" required><label for="male">Male</label>
+                    <input id="female" class="class1" type=radio name="female" id="female" required><label for="female">Female</label></div>
+                    <br>
+                    <label for="age">Age:</label>
+                    <input type=number name="age" id="age" required><br>
+                    <label for="dob">Date of Birth</label>
+                    <input type="date" name="dob"  id="dob"><br>
+                    <label for="favcolor" >Favourite color:</label>
+                    <input type="color" id="favcolor" name="favcolor"><br>
+                    <label for="country" >Which country:</label>
+                        <select id="country" name="country">
+                        <option value="India">India</option>
+                        <option value="USA">USA</option>
+                        <option value="UK">UK</option>
+                        <option value="UAE">UAE</option>
+                         <option value="China">China</option>
+                        <option value=""></option>
+
+        </select>
+
+
+
+                    </fieldset>
+                    <fieldset>
+                        <legend><h3>Your indicators</h3></legend>                    <label for="height">Height:</label>
+                        <span class=class2>Short</span><input type=range name="height" id="height" min="0" max="100"><span class=class3>Tall</span><br>
+    <label for="salary">Salary:</label>
+                        <span class=class2 >Poor</span><input  type=range name="salary" id="salary" min="0" max="100"><span class=class3>Rich</span>
+
+
+
+                    </fieldset>
+                    <fieldset>
+                        <legend><h3>Your Contact Information</h3></legend>
+                    <label for="email">Email:               
+                        </label>
+                    <input type="email" name="email" id="email"  required><br>
+                        <label for="tel">Mobile:</label>
+                        <input type=tel name="tel" id="tel"><br><label for="address">Address:</label>
+                        <textarea name="address" id="address" rows="3" cols="25" >
+
+                        </textarea>        
+    <br>
+      <label for="contact">Method to contact you:</label>
+    <div id="contact">
+
+
+
+    <input class="class1" type="checkbox" name="Email">
+<label for="Email">Email:</label>
+    
+
+                        <input class="class1" type="checkbox" name="Whatsapp">
+<label for="Whatsapp">Whatsapp:</label>
+                  
+                        <input class="class1" type="checkbox" name="Inapp" id="Inapp">
+<label for="Inapp">In-app chat:</label>      
+                        </div>                    
+                    </fieldset>                
+
+    <input type=submit name="submit">  
+
+
+                </form>  
+                <script src="https://www.cse.ust.hk/~rossiter/dating_web_site.js"></script>
+
+
+
+            </body>
+            </html>
